@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gato 🐱</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css" >
+        <link rel="stylesheet" href="gato.css">
+    </head>
+    <body>
+        
+        <!-- Código correspondente à barra de navegação no topo -->
+        <div id="nav">
+            <!-- Imagem à esquerda da barra, referência a imagem local -->
+            <img src="cat_yawning_laying-down.png" id="logo" style="height:150px;"/>
+            <!-- Elementos da barra-->
+            <ul id="navigation">
+                <li class="nav_li"><a class="active" href="gato.html">Início</a></li>
+                <li class="nav_li">
+                    <!-- O índice é um dropdown-->
+                    <div class="dropdown">
+                        <a class="dropbtn">Índice</a>
+                        <div class="dropdown-content">
+                            <!-- Referências locais -->
+                            <a href="#ogato">O Gato</a>
+                            <a href="#caracteristicas">Características</a>
+                            <a href="#alimentacao">Alimentação</a>
+                        </div>
+                      </div>
+                </li>
+                <!-- O último elemento da barra redireciona para uma página externa -->
+                <li class="nav_li"><a onclick="redirectToNews()">Neowtícias</a></li>
+            </ul>
+        </div>
+        
+        <!-- Código correspondente ao conteúdo da página-->
+        <div id="content">
+            <h2 id="ogato"><span class="h2-text">O Gato</span></span></h2>
+            <img class="gato1" src="https://imagens.publico.pt/imagens.aspx/1492463?tp=UH&db=IMAGENS&type=JPG&w=960" alt="Gato"/>
+
+            <p>O <b>gato</b> (<i>Felis silvestris catus</i>), também conhecido como gato <u>caseiro</u>, gato <u>urbano</u> ou gato <u>doméstico</u>, é um mamífero <u>carnívoro</u> da família dos <u>felídeos</u>, muito popular como <b>animal de estimação</b>. Ocupando o topo da cadeia alimentar, é predador natural de diversos animais:
+            <ul>
+                <li>roedores;</li>
+                <li>pássaros;</li>
+                <li>lagartixas;</li>
+                <li>insetos (alguns).</li>
+            </ul>
+            Segundo pesquisas realizadas por instituições norte-americanas, os gatos consistem no <span class="red">segundo</span> animal de estimação mais popular do mundo, estando atrás apenas dos <a class="blue" href="https://pt.wikipedia.org/wiki/Peixe_ornamental">peixes de aquário</a>. Dados censitários apontam que nos 
+            Estados Unidos <img class="bandeira" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="Bandeira dos Estados Unidos"> existem mais gatos domésticos do que cachorros.</p>
+
+            <p>A primeira associação com os humanos da qual se tem notícia ocorreu há cerca de 9500 anos, período superior ao estimado anteriormente, que oscilava entre 3500 e 8000 anos. 
+            A subfamília <i>Felinae</i>, que agrupa os gatos domésticos, surgiu há cerca de <b>12 milhões de anos</b>, expandindo-se a partir da África subsariana até alcançar as terras do atual Egito <img class="bandeira" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg" alt="Bandeira do Egito">. 
+            Acredita-se que o gato-selvagem-africano (<i>Felis silvestris lybica</i>) era seu antepassado imediato e evidencias genéticas assinalam que os gatos domésticos atuais partilham uma procedência direta com os gatos selvagens do Oriente Médio.</p>
+
+            <p>Existem cerca de <b>250</b> raças de gato doméstico, cujo peso variável entre 2,5 a 12 kg classifica a espécie como animal doméstico de <b>pequeno a médio porte</b>. 
+            Assim como ocorre com as raças de cães que apresentam esta mesma faixa de peso, o gato doméstico pode viver entre <b>quinze e vinte anos</b>. 
+            Devido à sua personalidade independente, tornou-se um animal de companhia em diversos lares ao redor do mundo, agradando pessoas dos mais variados estilos de vida.</p>
+
+            <p>Na cultura humana, é figura da mitologia às superstições, passando por personagens de desenhos animados, tiras de jornais, filmes e contos de fadas. Entre suas mais conhecidas representações, estão os seguintes gatos:</p>
+
+            <!-- Tabela com os nomes de gatos animados populares e respetivas imagens -->
+            <table style="width:100%">
+                <tr>
+                  <th>Tom</th>
+                  <th>Frajola</th> 
+                  <th>Manda-Chuva</th>
+                  <th>Gato Félix</th>
+                  <th>Gaturro</th> 
+                  <th>O Gato de Botas</th>
+                  <th>Garfield</th>
+                </tr>
+                <tr>
+                  <td><img class="imagem_tabela" src="https://purepng.com/public/uploads/medium/purepng.com-tom-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-1701528659640zpbw1.png" alt="Tom"/></td>
+                  <td><img class="imagem_tabela" src="https://vignette.wikia.nocookie.net/cartoonnetwork/images/0/03/Frajola.gif/revision/latest/scale-to-width-down/340?cb=20141019011716&path-prefix=pt-br" alt="Frajola"/></td>
+                  <td><img class="imagem_tabela" src="https://1.bp.blogspot.com/-b9KiZzX-uLs/V81wYnoCQeI/AAAAAAAAC9w/-W1iEu5oXlgyEQRLdKmDF1vMJLXOrwtfQCLcB/s400/Top_Cat.png" alt="Manda-Chuva"/></td>
+                  <td><img class="imagem_tabela" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Felix_the_cat.svg" alt="Gato Félix"/></td>
+                  <td><img class="imagem_tabela" src="https://vignette.wikia.nocookie.net/gaturro/images/5/5a/Gatu.png/revision/latest/scale-to-width-down/340?cb=20170501021754&path-prefix=pt-br" alt="Gaturro"/></td>
+                  <td><img class="imagem_tabela" src="https://4.bp.blogspot.com/--zHIGt6gkgs/XD9YaObdnTI/AAAAAAAAeoM/cp-pzGAjuCk0aYVSaScpG75qVDAEbowzQCLcBGAs/s1600/original.png" alt="O Gato de Botas"/></td>
+                  <td><img class="imagem_tabela" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/GarfieldStanding.jpg" alt="Garfield"/></td>
+                </tr>
+            </table>
+
+            <h2 id="caracteristicas"><span class="h2-text">Características</span></span></h2>
+            
+            <!-- Neste caso uso tags <i> para apresentar emojis -->
+            <h4><i class="em em-scales" aria-role="presentation" aria-label=""></i>&nbsp;&nbsp;Peso</h4>
+            <p>Os gatos geralmente pesam entre 2,5 e 7 kg; entretanto, exemplares de algumas raças, como o Maine Coon, podem exceder os 12 kg. Já foram até mesmo registrados exemplares com peso superior a 20 kg, aspecto que normalmente ocorre devido ao excesso de alimentação.</p>
+            
+            <h4><i class="em em-hourglass" aria-role="presentation" aria-label="HOURGLASS"></i>&nbsp;&nbsp;Esperança de vida</h4>
+            <p>Em cativeiro, os gatos vivem tipicamente de 15 a 20 anos, porém o exemplar mais velho já registrado viveu até a idade de 38 anos. Os gatos domésticos têm a expectativa de vida aumentada quando não saem pelas ruas, pois isso reduz o risco de ferimentos ocasionados por brigas e acidentes. A castração também aumenta significativamente a expectativa de vida desses animais, uma vez que reduz o interesse do animal por fugas noturnas e também o risco de incidência de cancro de testículos e ovários.</p>
+            
+            <h4><i class="em em-ear" aria-role="presentation" aria-label="EAR"></i></i>&nbsp;&nbsp;Audição</h4>
+            <p>Os gatos possuem trinta e dois músculos na orelha, o que lhes permite ter um tipo de audição direcional, movendo cada orelha independentemente da outra. Assim, um gato pode mover o corpo numa direção, enquanto move as orelhas para outro lado. A maioria dos gatos possui pavilhões auditivos orientados para cima. Diferentemente dos cães, gatos com orelhas dobradiças são extremamente raros. Os <i>Scottish Folds</i> são uma das exceções a essa regra, devido a uma série de mutações genéticas. Quando irritados ou assustados, os gatos repuxam os músculos das orelhas, o que faz com que elas se inclinem para trás.</p>
+            
+            <h4><i class="em em-sleeping" aria-role="presentation" aria-label="SLEEPING FACE"></i>&nbsp;&nbsp;Sono</h4>
+            <p>O método de conservação de energia dos gatos compreende dormir acima da média da maioria dos animais, sobretudo à medida que envelhecem. A duração do período de sono varia entre 12–16 horas, sendo de 13–14 horas o valor médio. Alguns espécimes, contudo, podem chegar a dormir 20 horas num período de 24 horas.</p>
+
+            <h4><i class="em em-thermometer" aria-role="presentation" aria-label=""></i>&nbsp;&nbsp;Temperatura Corporal</h4>
+            <p>A temperatura normal do corpo desses animais varia entre 38 e 39 °C. O animal é considerado febril quando tem a temperatura superior a 39,5 °C, e hipotérmico quando está abaixo de 37,5 °C. Comparativamente, os seres humanos têm temperatura normal em torno de 37 °C.</p>
+            
+            <h4><i class="em em-heartbeat" aria-role="presentation" aria-label="BEATING HEART"></i>&nbsp;&nbsp;Frequência Cardíaca</h4>
+            <p>A pulsação do coração desses pequenos mamíferos vai de 140 a 220 batidas por minuto e depende muito do estado de excitação do animal. Em repouso, a média da frequência cardíaca fica entre 150 e 180 bpm.</p>
+
+            <h4><i class="em em-feet" aria-role="presentation" aria-label="PAW PRINTS"></i>&nbsp;&nbsp;Mobilidade</h4>
+            <p>Assim como a maioria das espécies de mamíferos, os gatos são capazes de nadar. No entanto, somente o fazem quando extremamente necessário, como em caso de queda acidental na água.[44] Assim como os cães, os gatos são digitígrados: andam diretamente sobre os dedos; os ossos das suas patas compõem a parte mais baixa da porção visível das pernas. São capazes de passos precisos, colocando cada pata directamente sobre a pegada deixada pela anterior, minimizando o ruído e os trilhos visíveis.</p>
+            
+            <h2 id="alimentacao"><span class="h2-text">Alimentação</span></span></h2>
+
+            <!-- Texto com imagens intercaladas com texto -->
+            <img class="gato2" src="https://adelaidevet.com.au/sites/default/files/styles/large/public/images/article/kitten-with-food-bowl_0.jpg" alt="Gato"/>
+            <p>Em situações de caça, os gatos alimentam-se de insetos, pequenas aves e roedores. Os gatos não-domesticados, abandonados e sem dono, ou gatos domesticados que se alimentem livremente, consomem entre 8 a 16 refeições por dia. Apesar disso, os animais adultos podem adaptar-se a apenas uma refeição por dia. Os gatos não produzem a sua própria taurina, que consiste em um ácido orgânico essencial para a vida dos mamíferos. Como essa substância está presente no tecido muscular dos animais, o gato precisa se alimentar de carne para sobreviver. Assim, os gatos apresentam dentição e aparelho digestivo especializado para processamento de carne. O intestino diminuiu de extensão ao longo da evolução para ficar apenas com os segmentos que melhor processam as proteínas e gorduras de origem animal.</p>
+            <img class="gato3" src="https://t2.ea.ltmcdn.com/en/images/2/9/2/cat_hunting_behavior_when_and_how_cats_hunt_3292_orig.jpg" alt="Gato"/>
+            <p>Apesar da fisiologia do gato ser essencialmente orientada para o consumo de carne, é comum que os gatos complementem a sua dieta carnívora com a ingestão de pequenas quantidades de ervas, folhas, plantas domésticas ou outros elementos de origem vegetal. Uma teoria sugere que este comportamento ajuda os gatos a regurgitar em caso de difícil digestão; outra teoria aponta que ingerir pequenas doses de vegetais fornece fibras e minerais diversos, não presentes em uma dieta exclusivamente carnívora. Neste contexto, é necessária prudência aos donos dos gatos porque algumas plantas podem ser venenosas para os animais. As folhas de algumas espécies de lírios podem causar dano nos rins, que pode mesmo ser fatal; também as plantas do género Philodendron são venenosas para os gatos. Outro exemplo é o do abacateiro, do qual algumas partes são tóxicas, mas cujo fruto (exceto o caroço) é um ingrediente em várias marcas de comida para gatos.</p>
+            <p>Os gatos são bastante seletivos em sua alimentação, o que pode ser decorrente, pelo menos em parte, da mutação que causou à espécie a perda da capacidade de detectar o sabor doce nos alimentos. Apesar de exigentes, precisam alimentar-se constantemente, pois, de modo geral, não toleram mais de 36 horas de jejum sem que os seus rins sofram algum risco de dano.</p>
+        </div>
+    
+    </body>
+
+    <script>
+        // Abre o link numa tab nova, em vez de abrir na atual como um href
+        function redirectToNews() {
+            window.open('https://www.dn.pt/tag/gatos.html');
+        }
+
+        // Função que aplica o offset ao navegar pelo índice
+        function offsetAnchor() {
+            if (location.hash.length !== 0) {
+                var offset = 0;
+                if (window.location.hash === "#introducao") offset = 200;
+                else if (window.location.hash === "#caracteristicas") offset = 160;
+                window.scrollTo(window.scrollX, window.scrollY - offset);
+            }
+        }
+
+        // Deteta mudanças à hash da página e chama a função offsetAnchor em resposta
+        window.addEventListener("hashchange", offsetAnchor);
+
+        // Isto serve para servir o offset também quando se entra diretamente numa página com offset
+        // Acho que ter o timeout é necessário para o browser ter tempo de saltar para a âncora, embora o 1s seja arbitário
+        window.setTimeout(offsetAnchor, 1);
+    </script>
+</html>
