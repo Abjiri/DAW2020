@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT pr (metadata, team, abstract, deliverables) >
+
+<!ELEMENT metadata (keyname, title, subtitle?, begin_date, end_date, supervisor) >
+<!ELEMENT keyname (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begin_date (#PCDATA) >
+<!ELEMENT end_date (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+    
+<!ELEMENT team (member)+ >
+<!ELEMENT member (name, email, online_ref?) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT online_ref (#PCDATA) >
+
+<!ELEMENT abstract (paragraph)+ >
+<!ELEMENT paragraph (#PCDATA|italic|bold|underline|external_link|internal_link)* >
+<!ELEMENT italic (#PCDATA) >
+<!ELEMENT bold (#PCDATA) >
+<!ELEMENT underline (#PCDATA) >
+<!ELEMENT external_link (#PCDATA) >
+<!ELEMENT internal_link (#PCDATA) >
+
+<!ELEMENT deliverables (output)+ >
+<!ELEMENT output (#PCDATA) >
+
+
+<!ATTLIST metadata
+    id ID #REQUIRED >
+
+<!ATTLIST team
+    id ID #REQUIRED >
+
+<!ATTLIST abstract
+    id ID #REQUIRED >
+
+<!ATTLIST deliverables
+    id ID #REQUIRED >
+
+
+<!ATTLIST supervisor
+    weblink CDATA #REQUIRED >
+
+<!ATTLIST member
+    id ID #REQUIRED>
+
+<!ATTLIST email
+    weblink CDATA #IMPLIED >
+
+<!ATTLIST online_ref
+    weblink CDATA #REQUIRED >
+
+<!ATTLIST internal_link
+    element_id IDREF #REQUIRED >
+
+<!ATTLIST output
+    weblink CDATA #REQUIRED >

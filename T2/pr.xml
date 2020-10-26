@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <metadata id="metadata">
+        <keyname>DAW2020_TPC2</keyname>
+        <title>Redação de um ficheiro DTD para documentos "Project Record"</title>
+        <subtitle>Relatório inserido nos trabalhos práticos da cadeira de DAW do MIEI 2020/21</subtitle>
+        <begin_date>26/10/2020</begin_date>
+        <end_date>26/10/2020</end_date>
+        <supervisor weblink="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </metadata>
+
+    <team id="team">
+        <member id="a85006">
+            <name>Hugo André Coelho Cardoso</name>
+            <email weblink="mailto:a85006@alunos.uminho.pt">a85006@alunos.uminho.pt</email>
+            <online_ref weblink="https://github.com/Abjiri">github.com/Abjiri</online_ref>
+        </member>
+    </team>
+
+    <abstract id="abstract">
+        <paragraph>O projeto desenvolvido consistiu na criação de um ficheiro <bold>DTD</bold> e do presente ficheiro <bold>XML</bold>.</paragraph>
+        <paragraph>Em primeiro lugar, foi desenvolvido o ficheiro de <underline>definição de tipo de documento</underline> disponibilizado, especificando a estrutura de documentos <italic>Project Record</italic>.</paragraph>
+        <paragraph>De seguida, procedeu-se à redação do presente relatório, em <bold>XML</bold> (<italic>Extensible Markup Language</italic>), seguindo as regras do formato estudado.</paragraph>
+        <paragraph>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, em <external_link>https://github.com/Abjiri/DAW2020/blob/master/T2/pr.dtd</external_link>, como é explicitado na secção <internal_link element_id="deliverables">Resultados</internal_link>.</paragraph>
+    </abstract>
+
+    <deliverables id="deliverables">
+        <output weblink="https://github.com/Abjiri/DAW2020/blob/master/T2/pr.dtd">DTD relativo a documentos "Project Record"</output>
+    </deliverables>
+</pr>
