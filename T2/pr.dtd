@@ -45,7 +45,7 @@
     weblink CDATA #REQUIRED >
 
 <!ATTLIST member
-    id ID #REQUIRED>
+    student_nmbr ID #REQUIRED>
 
 <!ATTLIST email
     weblink CDATA #IMPLIED >
