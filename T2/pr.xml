@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
 <pr>
     <metadata id="metadata">
         <keyname>DAW2020_TPC2</keyname>
@@ -10,7 +11,7 @@
     </metadata>
 
     <team id="team">
-        <member id="a85006">
+        <member student_nmbr="a85006">
             <name>Hugo André Coelho Cardoso</name>
             <email weblink="mailto:a85006@alunos.uminho.pt">a85006@alunos.uminho.pt</email>
             <online_ref weblink="https://github.com/Abjiri">github.com/Abjiri</online_ref>
