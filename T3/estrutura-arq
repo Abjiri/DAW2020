@@ -34,3 +34,4 @@ QUERIES ÚTEIS:
 - //ARQELEM/not(_) -> testar se um elemento é obrigatório
 - //ARQELEM/count(_) -> contar o nº de vezes que o elemento ocorre em cada ARQELEM
 - //ARQELEM/count(_)>1 -> verificar se um elemento pode ocorrer várias vezes no mesmo ARQELEM
+- //ARQELEM[contains(IDENTI,'_')] -> selecionar um registo específico
