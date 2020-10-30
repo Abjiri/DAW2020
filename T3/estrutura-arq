@@ -13,9 +13,9 @@ AUTOR -> 1
 DATA -> 1
 
 Elementos com atributos:
-TIPO -> 1   / @ASSUNTO -> 1
-IMAGEM -> 1 / @NOME -> 1
-LIGA        / @TERMO -> 1
+TIPO -> 1     / @ASSUNTO -> 1
+IMAGEM -> 0|1 / @NOME -> 1
+LIGA          / @TERMO -> 1
 
 Elementos com elementos:
 QUADRO -> 0|1 / LIGA -> *
