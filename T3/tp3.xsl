@@ -62,29 +62,22 @@
                     <xsl:if test="IMAGEM"><img src="../images/{IMAGEM/@NOME}" style="float: right; width: 30%; margin: 30px"/></xsl:if> <!-- só há uma imagem neste caso, mas a pasta é para ser mais escalável -->
                     <xsl:if test="IDENTI"><h1><xsl:value-of select="IDENTI"/></h1></xsl:if>
                     <xsl:if test="TIPO"><p><b>Tipo: </b><xsl:value-of select="TIPO/@ASSUNTO"/></p></xsl:if>
+                    <xsl:if test="DESCRI"><p><b>Descrição: </b><xsl:apply-templates select="DESCRI"/></p></xsl:if>
                     <xsl:if test="CRONO"><p><b>Época: </b><xsl:value-of select="CRONO"/></p></xsl:if>
                     <xsl:if test="LUGAR and string-length(LUGAR) > 0"><p><b>Lugar: </b><xsl:value-of select="LUGAR"/></p></xsl:if> <!-- há uma tag destas sem valor -->
+                    <xsl:if test="FREGUE"><p><b>Freguesia: </b><xsl:value-of select="FREGUE"/></p></xsl:if>
                     <xsl:if test="CONCEL"><p><b>Concelho: </b><xsl:value-of select="CONCEL"/></p></xsl:if>
-                    <xsl:if test="CODADM"><p><b>Codadm: </b><xsl:value-of select="CODADM"/></p></xsl:if>
+                    <xsl:if test="CODADM"><p><b>Código administrativo: </b><xsl:value-of select="CODADM"/></p></xsl:if>
                     <xsl:if test="LATITU"><p><b>Latitude: </b><xsl:value-of select="LATITU"/></p></xsl:if>
                     <xsl:if test="LONGIT"><p><b>Longitude: </b><xsl:value-of select="LONGIT"/></p></xsl:if>
                     <xsl:if test="ALTITU"><p><b>Altitude: </b><xsl:value-of select="ALTITU"/></p></xsl:if>
-                    <xsl:if test="AUTOR"><p><b>Autor: </b>
-                        <xsl:if test="string-length(AUTOR) = 0">Desconhecido</xsl:if>
-                        <xsl:if test="string-length(AUTOR) > 0"><xsl:value-of select="AUTOR"/></xsl:if>
-                    </p></xsl:if>
-                    <xsl:if test="DATA"><p><b>Data: </b><xsl:value-of select="DATA"/></p></xsl:if>
-                    
-                    
-                    <!-- Elemenos com elementos -->
+                    <xsl:if test="ACESSO"><p><b>Acesso: </b><xsl:value-of select="ACESSO"/></p></xsl:if>
                     <xsl:if test="QUADRO"><p><b>Quadro: </b><xsl:value-of select="QUADRO"/></p></xsl:if>
                     <xsl:if test="TRAARQ"><p><b>Trabalhos arqueológicos: </b><xsl:value-of select="TRAARQ"/></p></xsl:if>
-                    <xsl:if test="DEPOSI"><p><b>Depósito: </b><xsl:value-of select="DEPOSI"/></p></xsl:if>
-                    <xsl:if test="INTERE"><p><b>Interesse: </b><xsl:value-of select="INTERE"/></p></xsl:if>
                     <xsl:if test="DESARQ"><p><b>Descrição arqueológica: </b><xsl:apply-templates select="DESARQ"/></p></xsl:if>
                     <xsl:if test="INTERP"><p><b>Interpretação: </b><xsl:apply-templates select="INTERP"/></p></xsl:if>
-                    <xsl:if test="ACESSO"><p><b>Acesso: </b><xsl:value-of select="ACESSO"/></p></xsl:if>
-                    <xsl:if test="DESCRI"><p><b>Descrição: </b><xsl:apply-templates select="DESCRI"/></p></xsl:if>
+                    <xsl:if test="DEPOSI"><p><b>Depósito: </b><xsl:value-of select="DEPOSI"/></p></xsl:if>
+                    <xsl:if test="INTERE"><p><b>Interesse: </b><xsl:value-of select="INTERE"/></p></xsl:if>
                     <xsl:if test="BIBLIO">
                         <p><b>Bibliografia: </b></p>
                         <ul>
@@ -93,6 +86,11 @@
                             </xsl:apply-templates>
                         </ul>
                     </xsl:if>
+                    <xsl:if test="AUTOR"><p><b>Autor: </b>
+                        <xsl:if test="string-length(AUTOR) = 0">Desconhecido</xsl:if>
+                        <xsl:if test="string-length(AUTOR) > 0"><xsl:value-of select="AUTOR"/></xsl:if>
+                    </p></xsl:if>
+                    <xsl:if test="DATA"><p><b>Data: </b><xsl:value-of select="DATA"/></p></xsl:if>
                     
                     <address>
                         <xsl:choose>
@@ -121,13 +119,6 @@
         <xsl:value-of select="."/>
         <xsl:if test="LIGA">(termo: <xsl:apply-templates select="LIGA"/>)</xsl:if>
     </xsl:template>
-        <!--xsl:if test="string-length(LIGA) >= string-length(LIGA/@TERMO)">
-            <xsl:value-of select="LIGA"/>
-        </xsl:if>
-        <xsl:if test="string-length(LIGA/@TERMO) > string-length(LIGA)">
-            <xsl:value-of select="LIGA/@TERMO"/>
-        </xsl:if>
-    </xsl:template-->
     
     <xsl:template match="BIBLIO" mode="biblio">
         <li><xsl:value-of select="."/></li>
