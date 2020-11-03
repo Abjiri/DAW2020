@@ -109,7 +109,7 @@
     </xsl:template>
     
     <xsl:template match="LIGA">
-        <i style="color: orange"><xsl:choose>
+        <i style="color: blue"><xsl:choose>
             <xsl:when test="contains(.,@TERMO)"><xsl:value-of select="."/></xsl:when>
             <xsl:otherwise><xsl:value-of select="@TERMO"/></xsl:otherwise>
         </xsl:choose></i>
