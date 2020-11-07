@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_TPC4</key>
+        <title>Incorporação do T3 num servidor Node</title>
+        <subtitle>Relatório inserido nos trabalhos práticos da cadeira de DAW do MIEI 2020/21</subtitle>
+        <bdate>07/11/2020</bdate>
+        <edate>07/11/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+
+    <team>
+        <member id="a85006">
+            <name>Hugo André Coelho Cardoso</name>
+            <email>a85006@alunos.uminho.pt</email>
+            <url>github.com/Abjiri</url>
+        </member>
+    </team>
+
+    <abstract>
+        <p>O projeto desenvolvido consistiu no desenvolvimento de um servidor Node com um índice ligado a várias páginas de sítios arqueológicos.</p>
+        <p>O dataset disponibilizado é o mesmo do <link url="https://github.com/Abjiri/DAW2020/tree/master/T3">T3</link>, e do seu processamento resultou a geração de ficheiros cujo nome seguia o formato <i>arqX.html</i>, com o índice num outro ficheiro à parte, cujo cada elemento possui uma referência do formato <i>localhost:7777/arqs/x</i>.</p>
+        <p>O servidor Node é executado em <i>localhost</i>, na porta 7777, e responde a pedidos desse mesmo formato com a página HTML do respetivo arqueossítio.</p>
+        <p>É ainda possível navegar de volta para o índice, mais especificamente para a posição do arqueossítio atual, bem como para o sítio anterior e seguinte.</p>
+        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T4">Github</link>.</p>
+    </abstract>
+
+    <deliverables>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T4/arq.xml">Dataset de sítios arqueológicos no noroeste de Portugal</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T4/arq.xsl">XSLT desenvolvido para gerar os ficheiros HTML</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T4/servidor.js">Código fonte do servidor Node</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T4/site">Ficheiros HTML gerados neste trabalho prático</link>
+    </deliverables>
+</pr>
