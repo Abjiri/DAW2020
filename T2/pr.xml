@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pr SYSTEM "pr.dtd">
 <pr>
-    <metadata id="metadata">
-        <keyname>DAW2020_TPC2</keyname>
+    <meta>
+        <key>DAW2020_TPC2</key>
         <title>Redação de um ficheiro DTD para documentos "Project Record"</title>
         <subtitle>Relatório inserido nos trabalhos práticos da cadeira de DAW do MIEI 2020/21</subtitle>
-        <begin_date>26/10/2020</begin_date>
-        <end_date>26/10/2020</end_date>
-        <supervisor weblink="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
-    </metadata>
+        <bdate>26/10/2020</bdate>
+        <edate>26/10/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
 
-    <team id="team">
-        <member student_nmbr="a85006">
+    <team>
+        <member id="a85006">
             <name>Hugo André Coelho Cardoso</name>
-            <email weblink="mailto:a85006@alunos.uminho.pt">a85006@alunos.uminho.pt</email>
-            <online_ref weblink="https://github.com/Abjiri">github.com/Abjiri</online_ref>
+            <email>a85006@alunos.uminho.pt</email>
+            <url>https://github.com/Abjiri</url>
         </member>
     </team>
 
-    <abstract id="abstract">
-        <paragraph>O projeto desenvolvido consistiu na criação de um ficheiro <bold>DTD</bold> e do presente ficheiro <bold>XML</bold>.</paragraph>
-        <paragraph>Em primeiro lugar, foi desenvolvido o ficheiro de <underline>definição de tipo de documento</underline> disponibilizado, especificando a estrutura de documentos <italic>Project Record</italic>.</paragraph>
-        <paragraph>De seguida, procedeu-se à redação do presente relatório, em <bold>XML</bold> (<italic>Extensible Markup Language</italic>), seguindo as regras do formato estudado.</paragraph>
-        <paragraph>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, em <external_link>https://github.com/Abjiri/DAW2020/blob/master/T2/pr.dtd</external_link>, como é explicitado na secção <internal_link element_id="deliverables">Resultados</internal_link>.</paragraph>
+    <abstract>
+        <p>O projeto desenvolvido consistiu na criação de um ficheiro <b>DTD</b> e do presente ficheiro <b>XML</b>.</p>
+        <p>Em primeiro lugar, foi desenvolvido o ficheiro de <u>definição de tipo de documento</u> disponibilizado, especificando a estrutura de documentos <i>Project Record</i>.</p>
+        <p>De seguida, procedeu-se à redação do presente relatório, em <b>XML</b> (<i>Extensible Markup Language</i>), seguindo as regras do formato estudado.</p>
+        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T2/pr.dtd">Github</external_link>.</p>
     </abstract>
 
-    <deliverables id="deliverables">
-        <output weblink="https://github.com/Abjiri/DAW2020/blob/master/T2/pr.dtd">DTD relativo a documentos "Project Record"</output>
+    <deliverables>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T2/pr.dtd">DTD relativo a documentos "Project Record"</link>
     </deliverables>
 </pr>
