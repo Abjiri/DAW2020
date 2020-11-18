@@ -21,7 +21,7 @@
     <abstract>
         <p>O projeto desenvolvido consistiu no desenvolvimento de um servidor Node que disponibiliza a informação do dataset <link url="https://github.com/Abjiri/DAW2020/blob/master/T5/db.json">db.json</link>, de forma organizada e intuitiva, dividindo-a por coleções de dados e apresentando cada coleção com um sistema de paginação que permite navegar por toda a informação do dataset.</p>
         <p>O servidor Node comunica com um servidor secundário, para o qual foi usado <i>json-server</i> para gerar automaticamente uma API que permite aceder à informação do dataset, apresentando-a posteriormente ao utilizador, formatada em HTML.</p>
-        <p>É ainda possível navegar de volta para o índice, a partir de qualquer outra página do servidor, e para a coleção atual, caso esteja a consultar um elemento, mais especificamente para o ponto de entrada nsse elemento no sistema de paginação.</p>
+        <p>É ainda possível navegar de volta para o índice, a partir de qualquer outra página do servidor, e para a coleção atual, caso esteja a consultar um elemento, mais especificamente para o ponto de acesso a esse elemento no sistema de paginação.</p>
         <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T5">Github</link>.</p>
     </abstract>
 
