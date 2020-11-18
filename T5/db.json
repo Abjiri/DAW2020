@@ -2895,15 +2895,6 @@
       "curso": "CB14",
       "anoCurso": "5",
       "instrumento": "Saxofone"
-    },
-    {
-      "id": "k3VHt0R"
-    },
-    {
-      "id": "TGg_sAg"
-    },
-    {
-      "id": "iKtmMqM"
     }
   ],
   "cursos": [
@@ -3396,14 +3387,6 @@
     {
       "id": "I23",
       "#text": "Castanholas"
-    },
-    {
-      "id": "I69",
-      "#text": "Kazoo"
-    },
-    {
-      "id": "I420",
-      "#text": "Charro"
     }
   ]
 }
