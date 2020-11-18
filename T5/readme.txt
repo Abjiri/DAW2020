@@ -1,1 +1,0 @@
-TPC #5 da UC Desenvolvimento de Aplicações Web (MIEI 2020)
