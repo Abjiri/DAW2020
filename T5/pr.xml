@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_TPC5</key>
+        <title>Servidor Node para o dataset "Escola Musical"</title>
+        <subtitle>Relatório inserido nos trabalhos práticos da cadeira de DAW do MIEI 2020/21</subtitle>
+        <bdate>17/11/2020</bdate>
+        <edate>18/11/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+
+    <team>
+        <member id="a85006">
+            <name>Hugo André Coelho Cardoso</name>
+            <email>a85006@alunos.uminho.pt</email>
+            <url>github.com/Abjiri</url>
+        </member>
+    </team>
+
+    <abstract>
+        <p>O projeto desenvolvido consistiu no desenvolvimento de um servidor Node que disponibiliza a informação do dataset <link url="https://github.com/Abjiri/DAW2020/blob/master/T5/db.json">db.json</link>, de forma organizada e intuitiva, dividindo-a por coleções de dados e apresentando cada coleção com um sistema de paginação que permite navegar por toda a informação do dataset.</p>
+        <p>O servidor Node comunica com um servidor secundário, para o qual foi usado <i>json-server</i> para gerar automaticamente uma API que permite aceder à informação do dataset, apresentando-a posteriormente ao utilizador, formatada em HTML.</p>
+        <p>É ainda possível navegar de volta para o índice, a partir de qualquer outra página do servidor, e para a coleção atual, caso esteja a consultar um elemento, mais especificamente para o ponto de entrada nsse elemento no sistema de paginação.</p>
+        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T5">Github</link>.</p>
+    </abstract>
+
+    <deliverables>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T5/db.json">Dataset da escola musical</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T5/server.js">Código fonte do servidor Node</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T5/api.js">Funções auxiliares do servidor</link>
+    </deliverables>
+</pr>
