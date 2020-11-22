@@ -1,0 +1,56 @@
+{
+  "relevantIds": [
+    {
+      "id": "1",
+      "name": "nextId",
+      "value": "6"
+    }
+  ],
+  "tasks": [
+    {
+      "description": "Comer uma mariscada em Vigo",
+      "created": "2020-11-22T12:52",
+      "due": "2020-11-23T12:52",
+      "who": "Hugo Cardoso",
+      "type": "Lazer",
+      "done": true,
+      "id": "1"
+    },
+    {
+      "description": "A",
+      "who": "AAA",
+      "due": "2020-11-30T12:30",
+      "type": "Trabalho",
+      "id": "2",
+      "created": "22-11-2020",
+      "done": false
+    },
+    {
+      "description": "Nova",
+      "created": "22-11-2020, 16:50",
+      "due": "1999-12-30T12:34",
+      "who": "vavava",
+      "type": "Trabalho",
+      "done": true,
+      "id": "3"
+    },
+    {
+      "description": "q",
+      "who": "q",
+      "due": "12-12-2012, 12:12",
+      "type": "Limpeza",
+      "id": "4",
+      "created": "22-11-2020, 16:56",
+      "done": false
+    },
+    {
+      "description": "PIDSFHISADPFHIPOSDHFIODSHOIFAHSDIOFAHSDOIFHOISADHFDSIAOFHDSIOFHSDOAIFHIOSDAHFIOSDAFHOISADHFOSDOHIAFIOSDAFHIOSDAHIFSAOIFSHIOAFOSDIAADFIOSHIO",
+      "who": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "due": "30-12-1212, 12:12",
+      "type": "Trabalho",
+      "id": "5",
+      "created": "22-11-2020, 17:48",
+      "done": false
+    }
+  ]
+}
