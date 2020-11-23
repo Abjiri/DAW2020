@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_TPC6</key>
+        <title>Servidor Node para uma "To-Do List"</title>
+        <subtitle>Relatório inserido nos trabalhos práticos da cadeira de DAW do MIEI 2020/21</subtitle>
+        <bdate>22/11/2020</bdate>
+        <edate>23/11/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+
+    <team>
+        <member id="a85006">
+            <name>Hugo André Coelho Cardoso</name>
+            <email>a85006@alunos.uminho.pt</email>
+            <url>github.com/Abjiri</url>
+        </member>
+    </team>
+
+    <abstract>
+        <p>O projeto desenvolvido consistiu no desenvolvimento de um servidor Web, em <i>Node.js</i>, que disponibiliza os serviços habituais de uma lista de tarefas e funciona todo sobre uma única página HTML.</p>
+        <p>As tarefas introduzidas e manipuladas pelo utilizador são guardadas num ficheiro <i>json</i>, para permitir a persistência desses dados, e disponibilizadas por um servidor gerado através de <i>json-server</i> , que cria uma API que permite aceder à informação do dataset.</p>
+        <p>Neste projeto é possível criar novas tarefas, especificando a sua descrição, o responsável por a resolver, o prazo e o tipo da tarefa em questão, editar qualquer um desses campos posteriormente (enquanto a tarefa não tiver sido concluída), marcar tarefas como concluídas e apagá-las da lista de tarefas feitas. Além disso, pode-se ainda filtrar as tarefas por fazer pelo seu tipo.</p>
+        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T5">Github</link>.</p>
+    </abstract>
+
+    <deliverables>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/db.json">Dataset da tarefas</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/server.js">Código fonte do servidor Node</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/static.js">Funções auxiliares do servidor, responsáveis por servir recursos estáticos</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/public">Recursos estáticos da aplicação</link>
+    </deliverables>
+</pr>
