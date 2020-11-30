@@ -1,4 +1,6 @@
 var express = require('express');
+var multer  = require('multer');
+var upload = multer({ dest: 'public/images' });
 var router = express.Router();
 
 var Student = require('../controllers/student')
@@ -36,7 +38,7 @@ router.get('/students/:id', function(req, res) {
 
 
 /* POST register new student. */
-router.post('/students', function(req, res) {
+router.post('/students', upload.single('photo'), function(req, res) {
   let { number, name, git } = req.body;
   let student = {};
 
@@ -50,13 +52,19 @@ router.post('/students', function(req, res) {
     else student.tpc.push(0);
   }
 
+  if (!req.file) {
+    console.log("No file received...");
+    student.photo = null;
+  }
+  else student.photo = 'http://localhost:7700/' + req.file.path;
+
   Student.insert(student);
   res.redirect('/students');
 })
 
 /* PUT edit student. */
-router.put('/students/:id', function(req, res) {
-  let { id, number, name, git } = req.body;
+router.put('/students/:id', upload.single('photo'), function(req, res) {
+  let { id, number, name, git, photo } = req.body;
   let student = {};
 
   student.number = number;
@@ -68,6 +76,12 @@ router.put('/students/:id', function(req, res) {
     if (req.body[`tpc${i}`] != undefined) student.tpc.push(1);
     else student.tpc.push(0);
   }
+
+  if (!req.file) {
+    console.log("No file received...");
+    student.photo = photo;
+  }
+  else student.photo = 'http://localhost:7700/' + req.file.path;
 
   Student.edit(id,student);
   res.redirect('/students');

@@ -3,7 +3,7 @@ var express = require('express');
 var methodOverride = require('method-override');
 var path = require('path');
 var logger = require('morgan');
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
 
 //Set up default mongoose connection
 var mongoDB = 'mongodb://127.0.0.1/DAW2020';

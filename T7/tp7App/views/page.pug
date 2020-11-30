@@ -16,7 +16,6 @@ block content
               th Name
               th Git
               th 
-              th
             each s in list
               tr
                 td 
@@ -59,6 +58,14 @@ block content
                   td(style="padding:0 15px 0 15px") ✅
                 else
                   td(style="padding:0 15px 0 15px") ❌
+        if student.photo != null
+          li(style="margin-top: 10px; margin-bottom: 10px")
+            b Photography:
+            |
+            img(
+              src= student.photo
+              alt= "Student's photography"
+            )
       a(href=`/students/edit/${student.number}` style="float: left; margin-right: 10px")
         button(class="w3-btn w3-blue-grey" type="button" style="margin: 20px 5px 20px 40px") Edit
       a(href='/students')
@@ -72,7 +79,13 @@ block content
       header.w3-container.w3-teal
         h3.w3-left New student
         
-      form(class="w3-container" action="/students" method="POST" style="margin-bottom: 30px; margin-top: 10px")
+      form(
+        class="w3-container" 
+        action="/students" 
+        method="POST" 
+        style="margin-bottom: 30px; margin-top: 10px"
+        enctype="multipart/form-data"
+      )
         label(class="w3-text-teal")
           b Student Number:
         input(
@@ -93,13 +106,24 @@ block content
           b Git:
         input(class="w3-input w3-border w3-light-grey" type="url" name="git" style="margin-bottom: 10px" required)
 
-        label(class="w3-text-teal") 
-          b TPC:
-        div.form-group
-          each val in ['1','2','3','4','5','6','7','8']
-            div.checkbox-inline
-              label(for=`tpc${val}`)=val
-                input.checkbox-input(type='checkbox', name=`tpc${val}`, value=checked, id=`tpc${val}`, style="margin-left: 10px")
+        table
+          tr
+            th
+              label(class="w3-text-teal" name="tps") 
+                b TPC:
+            th
+              label(class="w3-text-teal" name="photo" style="margin-left: 150px") 
+                b Foto de aluno:
+          tr
+            td
+              div.form-group(name="tps")
+                each val in ['1','2','3','4','5','6','7','8']
+                  div.checkbox-inline
+                    label(for=`tpc${val}`)=val
+                      input.checkbox-input(type='checkbox', name=`tpc${val}`, value=checked, id=`tpc${val}`, style="margin-left: 10px")
+            td
+              input(type="file" name="photo" style="margin-left: 250px")
+
 
         div(id="buttons" style="margin-top: 20px; margin-bottom: 20px")
           input(class="w3-btn w3-blue-grey" style="margin-right: 15px" type="submit" value="Register")
@@ -114,6 +138,7 @@ block content
         
       form(class="w3-container" method="POST" action=`/students/${student.number}?_method=PUT` style="margin-bottom: 30px; margin-top: 10px")
         input(name="id" value=student.number hidden)
+        input(name="photo" value=student.photo hidden)
 
         label(class="w3-text-teal")
           b Student Number:
@@ -150,20 +175,30 @@ block content
           required
         )
 
-        label(class="w3-text-teal") 
-          b TPC:
-        div.form-group
-          each val in ['1','2','3','4','5','6','7','8']
-            div.checkbox-inline
-              label(for=`tpc${val}` style="margin-left: 10px")=val
-                input.checkbox-input(
-                  type='checkbox'
-                  name=`tpc${val}`
-                  value=checked
-                  checked= student.tpc[parseInt(val)-1] == 1
-                  id=`tpc${val}`
-                  style="margin-left: 10px"
-                )
+        table
+          tr
+            th
+              label(class="w3-text-teal" name="tps") 
+                b TPC:
+            th
+              label(class="w3-text-teal" name="photo" style="margin-left: 150px") 
+                b Foto de aluno:
+          tr
+            td
+              div.form-group(name="tps")
+                each val in ['1','2','3','4','5','6','7','8']
+                  div.checkbox-inline
+                    label(for=`tpc${val}` style="margin-left: 10px")=val
+                      input.checkbox-input(
+                        type='checkbox'
+                        name=`tpc${val}`
+                        value=checked
+                        checked= student.tpc[parseInt(val)-1] == 1
+                        id=`tpc${val}`
+                        style="margin-left: 10px"
+                      )
+            td
+              input(type="file" name="photo" style="margin-left: 250px")
 
         div(id="buttons" style="margin-top: 20px; margin-bottom: 20px")
           input(class="w3-btn w3-blue-grey" style="margin-right: 15px" type="submit" value="Submit")

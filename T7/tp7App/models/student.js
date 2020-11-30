@@ -4,7 +4,8 @@ var studentSchema = new mongoose.Schema({
     number: String,
     name: String,
     git: String,
-    tpc: [Number]
+    tpc: [Number],
+    photo: String
 });
 
 module.exports = mongoose.model('student', studentSchema)
