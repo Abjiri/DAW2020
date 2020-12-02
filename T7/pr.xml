@@ -22,6 +22,7 @@
         <p>O projeto desenvolvido consistiu no desenvolvimento de uma aplicação Express com servidor Node.js, que gere dados relativos a alunos, persistentes numa base de dados em MongoDB.</p>
         <p>As operações possíveis são a inserção, edição e remoção de alunos, tendo cada aluno obrigatoriamente um número de aluno, nome, url do respetivo GIT e sinalização de TPCs da disciplina realizados, e eventualmente também uma fotografia.</p>
         <p>A página principal mostra uma listagem de todos os alunos, e carregando no número de um deles é-se redirecionado para a sua respetiva página individual, onde é possível observar toda a informação relativa ao mesmo. É possível tanto editar como remover alunos a partir de ambas as páginas.</p>
+        <p>Além disso, todas as operações estão centralizadas numa única interface, ou seja, um único ficheiro PUG.</p>
         <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T5">Github</link>.</p>
     </abstract>
 
