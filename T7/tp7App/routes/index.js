@@ -13,27 +13,27 @@ router.get('/', function(req, res, next) {
 /* GET students listing. */
 router.get('/students', function(req, res) {
   Student.list()
-    .then(data => res.render('page', {subpage: 'students', list: data }))
-    .catch(err => res.render('page', {subpage: 'error', error: err}))
+    .then(data => res.render('layout', {subpage: 'students', list: data }))
+    .catch(err => res.render('layout', {subpage: 'error', error: err}))
 });
 
 /* GET register page. */
 router.get('/students/register', function(req, res) {
-  res.render('page', {subpage: 'register'});
+  res.render('layout', {subpage: 'register'});
 });
 
 /* GET student page. */
 router.get('/students/edit/:id', function(req, res) {
   Student.lookUp(req.params.id)
-    .then(student => res.render('page', {subpage: 'edit', student}))
-    .catch(error => res.render('page', {subpage: 'error', error}))
+    .then(student => res.render('layout', {subpage: 'edit', student}))
+    .catch(error => res.render('layout', {subpage: 'error', error}))
 });
 
 /* GET student page. */
 router.get('/students/:id', function(req, res) {
   Student.lookUp(req.params.id)
-    .then(student => res.render('page', {subpage: 'student', student}))
-    .catch(error => res.render('page', {subpage: 'error', error}))
+    .then(student => res.render('layout', {subpage: 'student', student}))
+    .catch(error => res.render('layout', {subpage: 'error', error}))
 });
 
 
@@ -63,7 +63,7 @@ router.post('/students', upload.single('photo'), function(req, res) {
 })
 
 /* PUT edit student. */
-router.put('/students/:id', upload.single('photo'), function(req, res) {
+router.put('/students/:id', upload.single('new_photo'), function(req, res) {
   let { id, number, name, git, photo } = req.body;
   let student = {};
 
@@ -79,12 +79,13 @@ router.put('/students/:id', upload.single('photo'), function(req, res) {
 
   if (!req.file) {
     console.log("No file received...");
-    student.photo = photo;
+    if (!photo.length) student.photo = null;
+    else student.photo = photo;
   }
   else student.photo = 'http://localhost:7700/' + req.file.path;
 
   Student.edit(id,student);
-  res.redirect('/students');
+  res.redirect(`/students/${student.number}`);
 })
 
 /* DELETE student. */

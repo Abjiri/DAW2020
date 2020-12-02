@@ -32,6 +32,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/public/images/', express.static('./public/images'))
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
@@ -47,7 +48,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('page', {subpage: 'error'});
+  res.render('layout', {subpage: 'error'});
 });
 
 module.exports = app;
