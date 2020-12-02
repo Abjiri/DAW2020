@@ -27,9 +27,8 @@
     </abstract>
 
     <deliverables>
-        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/db.json">Dataset da tarefas</link>
-        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/server.js">Código fonte do servidor Node</link>
-        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/static.js">Funções auxiliares do servidor, responsáveis por servir recursos estáticos</link>
-        <link url="https://github.com/Abjiri/DAW2020/blob/master/T6/public">Recursos estáticos da aplicação</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T7/tp7App">Aplicação Express com servidor Node e ligação a MongoDB</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T7/DAW2020.json">Dataset inicial, usado para popular a base de dados</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T7/populate.js">Script de inserção dos dados do dataset na base de dados MongoDB</link>
     </deliverables>
 </pr>
