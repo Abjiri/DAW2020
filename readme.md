@@ -6,3 +6,4 @@
 * T4 - Incorporação do T3 num servidor Node
 * T5 - Servidor Node para o dataset "Escola Musical"
 * T6 - Servidor Node para uma "To-Do List"
+* T7 - Aplicação Express para gestão de estudantes
