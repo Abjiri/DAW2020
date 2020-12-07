@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_TPC8</key>
+        <title>Formulário de submissão de múltiplos ficheiros</title>
+        <subtitle>Relatório inserido nos trabalhos práticos da cadeira de DAW do MIEI 2020/21</subtitle>
+        <bdate>06/12/2020</bdate>
+        <edate>06/12/2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+
+    <team>
+        <member id="a85006">
+            <name>Hugo André Coelho Cardoso</name>
+            <email>a85006@alunos.uminho.pt</email>
+            <url>github.com/Abjiri</url>
+        </member>
+    </team>
+
+    <abstract>
+        <p>O projeto desenvolvido consistiu no desenvolvimento de uma aplicação Node cuja principal característica é um formulário HTML onde é possível submeter vários ficheiros de uma vez.</p>
+        <p>A página principal do servidor exibe uma lista de todos os ficheiros carregados, que são mantidos num ficheiro JSON local, mostrando a data de submissão, o nome do ficheiro original, o tamanho, a descrição e o tipo do ficheiro.</p>
+        <p>Na rota <i>/files/upload</i> é possível fazer upload de ficheiros, sendo necessário indicar uma descrição para cada um. O utilizador pode carregar no botão "+ 1", para aparecer um espaço extra no formulário para carregar um novo ficheiro e, se mais tarde decidir que afinal não quer enviar um dos ficheiros que escolheu, pode remove-lo do formulário antes de submeter.</p>
+        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T8">Github</link>.</p>
+    </abstract>
+
+    <deliverables>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T8/server.js">Servidor Node com o processamento dos pedidos</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T8/html-templates.js">Ficheiro com funções de geração do código HTML do servidor</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T8/dbFiles.json">Ficheiro de persistência de dados</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T8/public">Recursos estáticos do programa</link>
+        <link url="https://github.com/Abjiri/DAW2020/blob/master/T8/uploads">Pasta onde são guardados os ficheiros temporariamente durante o upload</link>
+    </deliverables>
+</pr>
