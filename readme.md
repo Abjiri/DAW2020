@@ -7,3 +7,4 @@
 * T5 - Servidor Node para o dataset "Escola Musical"
 * T6 - Servidor Node para uma "To-Do List"
 * T7 - Aplicação Express para gestão de estudantes
+* T8 - Formulário de submissão de múltiplos ficheiros
