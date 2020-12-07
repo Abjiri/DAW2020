@@ -22,7 +22,7 @@
         <p>O projeto desenvolvido consistiu no desenvolvimento de um servidor Web, em <i>Node.js</i>, que disponibiliza os serviços habituais de uma lista de tarefas e funciona todo sobre uma única página HTML.</p>
         <p>As tarefas introduzidas e manipuladas pelo utilizador são guardadas num ficheiro <i>json</i>, para permitir a persistência desses dados, e disponibilizadas por um servidor gerado através de <i>json-server</i> , que cria uma API que permite aceder à informação do dataset.</p>
         <p>Neste projeto é possível criar novas tarefas, especificando a sua descrição, o responsável por a resolver, o prazo e o tipo da tarefa em questão, editar qualquer um desses campos posteriormente (enquanto a tarefa não tiver sido concluída), marcar tarefas como concluídas e apagá-las da lista de tarefas feitas. Além disso, pode-se ainda filtrar as tarefas por fazer pelo seu tipo.</p>
-        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T5">Github</link>.</p>
+        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T6">Github</link>.</p>
     </abstract>
 
     <deliverables>
