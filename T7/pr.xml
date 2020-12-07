@@ -2,7 +2,7 @@
 <!DOCTYPE pr SYSTEM "pr.dtd">
 <pr>
     <meta>
-        <key>DAW2020_TPC6</key>
+        <key>DAW2020_TPC7</key>
         <title>Aplicação Express de gestão de estudantes</title>
         <subtitle>Relatório inserido nos trabalhos práticos da cadeira de DAW do MIEI 2020/21</subtitle>
         <bdate>29/11/2020</bdate>
@@ -23,7 +23,7 @@
         <p>As operações possíveis são a inserção, edição e remoção de alunos, tendo cada aluno obrigatoriamente um número de aluno, nome, url do respetivo GIT e sinalização de TPCs da disciplina realizados, e eventualmente também uma fotografia.</p>
         <p>A página principal mostra uma listagem de todos os alunos, e carregando no número de um deles é-se redirecionado para a sua respetiva página individual, onde é possível observar toda a informação relativa ao mesmo. É possível tanto editar como remover alunos a partir de ambas as páginas.</p>
         <p>Além disso, todas as operações estão centralizadas numa única interface, ou seja, um único ficheiro PUG.</p>
-        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T5">Github</link>.</p>
+        <p>Os ficheiros produzidos encontram-se disponíveis no repositório público do autor, no <link url="https://github.com/Abjiri/DAW2020/blob/master/T7">Github</link>.</p>
     </abstract>
 
     <deliverables>
